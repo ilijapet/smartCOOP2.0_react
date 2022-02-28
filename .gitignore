@@ -21,3 +21,5 @@ smartcoop_react/.env.production.local
 smartcoop_react/npm-debug.log*
 smartcoop_react/yarn-debug.log*
 smartcoop_react/yarn-error.log*
+
+smartCOOP_brownie/.env
