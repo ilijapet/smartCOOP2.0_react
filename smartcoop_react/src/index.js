@@ -1,17 +1,23 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react';
+
+import { DAppProvider, Config, Kovan } from '@usedapp/core'
+import './App.css';
+import App from './App'
+
+const config = {
+  readOnlyChainId: Kovan.chainId,
+  readOnlyUrls: {
+    [Kovan.chainId]: 'https://kovan.infura.io/v3/d95759f532d54ae58967e92d9ccccf95',
+  },
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DAppProvider config={config}>
+      <App />
+    </DAppProvider>
   </React.StrictMode>,
   document.getElementById('root')
-);
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

@@ -6,7 +6,7 @@ import brownie
 from scripts.helpful_scripts import get_account
 
 
-# With this test we are cheking if COOPTOken ERC20 smart contract is deploying well and if we can sucesfully call mint function after contract has been
+# With this test we are cheking if COOPToken ERC20 smart contract is deploying well and if we can sucesfully call mint function after contract has been
 # deployed and if we can asigne all intial supplay of COOP tokens to SmartCOOP account
 def test_initial_supplay_account_alice(smartContract_deploy_with_mint):
     coop_token, coop = smartContract_deploy_with_mint
@@ -16,8 +16,7 @@ def test_initial_supplay_account_alice(smartContract_deploy_with_mint):
 # With this parametrized test we are checking if two accounts involved are empty by all producer profile dimensions from getUserAcountBalance.
 @pytest.mark.parametrize("i", range(0, 1))
 def test_account_balance(
-    smartContract_deploy_with_mint,
-    i,
+    smartContract_deploy_with_mint, i,
 ):
     account = get_account()
     balance = smartContract_deploy_with_mint[1].getUserAccountBalance(account[i])

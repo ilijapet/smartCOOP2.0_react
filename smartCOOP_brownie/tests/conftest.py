@@ -7,8 +7,7 @@ from scripts.helpful_scripts import get_contract, get_account
 initial_supplay = 10000_000_000_000_000_000_000
 
 """
-Defining a Shared Initial State for this test. A common pattern in testing is to include one or more module-scoped setup fixtures that define the 
-initial test conditions, and then use fn_isolation (next setp) to revert to this base state at the start of each test. 
+Defining a Shared Initial State for this test. A common pattern in testing is to include one or more module-scoped setup fixtures that define the initial test conditions, and then use fn_isolation (next step) to revert to this base state at the start of each test. 
 """
 
 
@@ -23,8 +22,7 @@ def smartContract_deploy_with_mint(COOPToken, SmartCOOP):
 
 
 """
-In many cases we want to isolate our tests from one another by resetting the local environment. Without isolation, it is possible that the outcome of 
-a test will be dependent on actions performed in a previous test. This is done by following function. 
+In many cases we want to isolate our tests from one another by resetting the local environment. Without isolation, it is possible that the outcome of a test will be dependent on actions performed in a previous test. This is done by following function. 
 """
 
 

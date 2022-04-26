@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import EntryPoint from "./components/EntryPoint";
+import BecomeMember from "./components/BecomeMember";
+import smartCoopLogo from "./assets/noun_raspberry_4132882_mala.svg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>
+        <img src={smartCoopLogo} />
+      </h1>
+      <h1>SmartCOOP</h1>
+      <h1>smart contract based agricultural cooperative</h1>
+      <div>
+        <BecomeMember />
+        <EntryPoint />
+      </div>
+    </>
   );
 }
 

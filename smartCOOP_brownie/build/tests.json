@@ -3,7 +3,7 @@
     "COOPToken": "c82da2f90a9527e264cc1a4a1338e2396d9b53e1",
     "MockV3Aggregator": "a343bf9ab36dab93298c11f3196b32a1566d14c1",
     "OpenZeppelin/openzeppelin-contracts@4.0.0/ERC20": "8795640d851d802fee4cab64b791fda696fcdca5",
-    "SmartCOOP": "8682fbdb1c106dec787a78043147cf34bf1c9774"
+    "SmartCOOP": "ec3533e4aace7ca020e220c4ef7a12c0e74c7577"
   },
   "tests": {
     "tests/test_coop.py": {
@@ -15,7 +15,7 @@
         "SmartCOOP"
       ],
       "results": ".........",
-      "sha1": "90ea995b92ee168d814dbfa89ab8d00b95f8a985",
+      "sha1": "17827bb9f2bcc86d9a4e5123fe1677890ce44951",
       "txhash": [
         "62769d01be6028cfac2f9d780c6730b962a124fe"
       ]
@@ -31,7 +31,7 @@
         ],
         "1": [
           [
-            27
+            28
           ],
           [],
           []
